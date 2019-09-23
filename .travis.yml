@@ -6,6 +6,9 @@ script:
   - docker build -t johnsonfreemanclarke/node .
   - docker images johnsonfreemanclarke/node
 
+before_deploy:
+  - docker login -u johnsonfreemanclarke -p 94Q#t3C;(-HJt=W
+  
 deploy: 
   provider: script
   script: docker push johnsonfreemanclarke/node
