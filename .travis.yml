@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t johnsonfreemanclarke/node .
+  - docker images johnsonfreemanclarke/node
