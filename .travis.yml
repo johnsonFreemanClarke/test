@@ -7,7 +7,7 @@ script:
   - docker images johnsonfreemanclarke/node
 
 before_deploy:
-  - docker login -u johnsonfreemanclarke -p 94Q#t3C;(-HJt=W
+  - docker login -u "johnsonfreemanclarke" -p "94Q#t3C;(-HJt=W"
   
 deploy: 
   provider: script
